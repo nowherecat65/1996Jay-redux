@@ -8731,6 +8731,15 @@ campaignTrail_temp.running_mate_image_url = "https://i.postimg.cc/C5hgL4Hz/gore-
 campaignTrail_temp.candidate_last_name = "Rockefeller";
 campaignTrail_temp.running_mate_last_name = "Gore";
 
+const style_overwrite = document.createElement("style");
+style_overwrite.innerHTML = 
+`#campaign_sign {
+  background-color: #2a09ae;
+  border-color: #080122;
+}`
+;
+document.head.appendChild(style_overwrite);
+
 campaignTrail_temp.multiple_endings = true;
 endingPicker = (out, totv, aa, quickstats) => {
 
